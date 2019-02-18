@@ -1,0 +1,128 @@
+/*
+ * ─── NAVBAR ─────────────────────────────────────────────────────────────────────
+ */
+
+/* toggle nav */
+.toggle-nav {
+  z-index: 1;
+  display: none;
+}
+
+/* navbar */
+@media screen and (min-width: 860px) {
+  .navbar {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .link__home {
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+  }
+}
+
+.navbar ul {
+  display: inline-block;
+  width: 100%;
+}
+
+.link__home a {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar li {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px 20px 0px 0px;
+  float: right;
+  list-style: none;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.navbar a {
+  color: lightgray;
+  transition: color linear 0.15s;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1150px) {
+  .wrap {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .navbar {
+    z-index: 1;
+    margin: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .navbar ul.active {
+    display: none;
+  }
+
+  .navbar ul {
+    width: fit-content;
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .navbar ul:after {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0%;
+    right: 22px;
+    content: '';
+    transform: translate(0%, -100%);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid rgba(0, 0, 0, 0.9);
+  }
+
+  .navbar li {
+    padding: 20px;
+    margin: 5px 0px 5px 0px;
+    float: none;
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+  }
+
+  .toggle-nav {
+    position: fixed;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.9);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    color: #777;
+    font-size: 20px;
+    transition: color linear 0.15s;
+  }
+
+  .toggle-nav:hover,
+  .toggle-nav.active {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
+}

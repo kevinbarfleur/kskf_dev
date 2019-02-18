@@ -1,0 +1,92 @@
+.contacts {
+  position: absolute;
+  top: 20%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  min-width: 400px;
+  /* max-width: 500px; */
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 940px) {
+  .contacts_info {
+    text-align: center;
+    /* margin-top: 30px; */
+  }
+  .map {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.contacts_info {
+  min-width: 200px;
+  /* max-width: 500px; */
+  padding: 10px;
+}
+
+.contacts_info h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.contacts_info ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  margin: 20px;
+}
+
+.contacts_info p {
+  font-size: 0.9em;
+}
+
+.table {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horaires {
+  margin: auto;
+  max-width: 600px;
+}
+
+.horaires h4 {
+  margin-top: 50px;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.table div {
+  display: flex;
+}
+
+.table div p:nth-child(1) {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.table div p:nth-child(2) {
+  margin-left: auto;
+}
+.table div {
+  margin-bottom: 30px;
+}
+
+.contact_mail {
+  margin-bottom: 20px;
+}

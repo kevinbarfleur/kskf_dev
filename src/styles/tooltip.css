@@ -1,0 +1,7 @@
+.tooltip {
+  background-color: aliceblue;
+  padding: 10px;
+  width: fit-content;
+  border: 1px solid lightgray;
+  transition: 0.5s;
+}

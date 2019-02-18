@@ -1,0 +1,35 @@
+.tiles {
+  padding: 6vh 16vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* position: relative; */
+}
+@media only screen and (max-width: 740px) {
+  .tiles {
+    padding: 20px;
+  }
+}
+.tile {
+  margin: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+@media only screen and (max-width: 740px) {
+  .tile {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+.tile img {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.tile img:hover {
+  transform: scale(1.1);
+}

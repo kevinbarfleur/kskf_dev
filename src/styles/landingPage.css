@@ -1,0 +1,88 @@
+.landingPage__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 0;
+
+  /* background: url(../images/home/home_picture.jpg) no-repeat center center fixed; */
+  /* UNFIXED BACKGROUND */
+  background: url(../images/home/home_picture.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 860px) {
+  .landingPage__content {
+    align-items: center;
+  }
+}
+
+.home__title {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
+
+  padding: 10px 20px;
+  margin-left: 10%;
+  margin-bottom: 50px;
+  margin-right: 10px;
+
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 860px) {
+  .home__title {
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+.scrollbar {
+  border-left: 1px solid white;
+  height: 50px;
+
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+}
+
+.scrollbar::after {
+  font-family: 'Montserrat', sans-serif;
+  content: 'Scroller';
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  display: inline-block;
+  transform: rotate(-90deg) translateY(130%);
+
+  animation-name: scrollDown;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes scrollDown {
+  0% {
+    bottom: 80px;
+  }
+  10% {
+    bottom: 90px;
+  }
+  20% {
+    bottom: 80px;
+  }
+  80% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
