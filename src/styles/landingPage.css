@@ -15,7 +15,7 @@
 
   /* background: url(../images/home/home_picture.jpg) no-repeat center center fixed; */
   /* UNFIXED BACKGROUND */
-  background: url(../images/home/home_picture.jpg) no-repeat center center;
+  background: url(../images/home/landing.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .home__title {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'GFS Didot', serif;
   font-weight: 500;
 
   padding: 10px 20px;
@@ -34,7 +34,28 @@
   margin-bottom: 50px;
   margin-right: 10px;
 
-  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+}
+
+.home__title h1 {
+  /* font-size: 1.2em; */
+  margin: 50px auto;
+}
+.home__title p {
+  font-weight: 400;
+}
+.home__title button {
+  font-family: 'Montserrat', sans-serif;
+  margin: 50px auto;
+  font-size: 1em;
+  padding: 10px;
+
+  border-radius: 10px;
+  border: none;
+}
+.home__title button:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 860px) {

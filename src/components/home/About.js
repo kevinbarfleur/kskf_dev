@@ -5,7 +5,7 @@ import Footer from '../Footer'
 
 const image_about1 = require('../../images/home/about_1.jpg')
 const image_about2 = require('../../images/home/about_2.jpg')
-const image_bachmi = require('../../images/home/bachmi.jpg')
+// const image_bachmi = require('../../images/home/bachmi.jpg')
 
 class About extends Component {
   state = {}

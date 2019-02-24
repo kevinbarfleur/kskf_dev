@@ -1,8 +1,5 @@
-.footer-container {
-  width: 100vw;
-}
-
 .container-school {
+  padding-top: 10vh;
   margin: auto;
   width: 80vw;
   line-height: 29px;
