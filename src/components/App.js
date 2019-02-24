@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+import posed, { PoseGroup } from 'react-pose'
 
 // Navbar & Footer Components
 import Navbar from './Navbar'
@@ -21,6 +22,11 @@ import School from './school/School'
 import '../styles/reset.css'
 import '../styles/app.css'
 
+const RouteContainer = posed.div({
+  enter: { opacity: 1, delay: 300, beforeChildren: true },
+  exit: { opacity: 0 }
+})
+
 class App extends Component {
   closeNavbar = () => {
     this.refs.navbarComponent.closeNavbar()
@@ -28,22 +34,44 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <Fragment>
-          <Navbar ref="navbarComponent" />
-
-          <div className="content" onClick={this.closeNavbar}>
-            <Route exact path="/" component={Home} />
-            <Route path="/ecole" component={School} />
-            <Route path="/arts-martiaux" component={Martials_Arts} />
-            <Route path="/actualites" component={Actuality} />
-            <Route path="/gallerie" component={Gallery} />
-            <Route path="/contacts" component={Contacts} />
-          </div>
-
-          <Footer />
-        </Fragment>
-      </Router>
+      <Route
+        render={({ location }) => (
+          <Fragment>
+            <Navbar ref="navbarComponent" />
+            <div className="content" onClick={this.closeNavbar}>
+              <PoseGroup>
+                <RouteContainer key={location.pathname}>
+                  <Switch location={location}>
+                    <Route exact path="/" component={Home} key="home" />
+                    <Route path="/ecole" component={School} key="ecole" />
+                    <Route
+                      path="/arts-martiaux"
+                      component={Martials_Arts}
+                      key="arts-martiaux"
+                    />
+                    <Route
+                      path="/actualites"
+                      component={Actuality}
+                      key="actualites"
+                    />
+                    <Route
+                      path="/gallerie"
+                      component={Gallery}
+                      key="gallerie"
+                    />
+                    <Route
+                      path="/contacts"
+                      component={Contacts}
+                      key="contacts"
+                    />
+                  </Switch>
+                </RouteContainer>
+              </PoseGroup>
+            </div>
+            <Footer />
+          </Fragment>
+        )}
+      />
     )
   }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+
+// Components
 import Preview from './Preview'
 import Footer from '../Footer'
 
