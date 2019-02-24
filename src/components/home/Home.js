@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import LandingPage from './LandingPage'
 import About from './About'
-import Preview from './Preview'
 
 // Styles
 import '../../styles/homeDisplay.css'
@@ -19,12 +18,8 @@ class Home extends Component {
     return (
       <React.Fragment>
         <div className="home">
-          {/* <h2>Acceuil 🔥</h2> */}
           <LandingPage />
           <About />
-          {/* <Preview /> */}
-          <Preview />
-          {/* <Preview /> */}
         </div>
       </React.Fragment>
     )

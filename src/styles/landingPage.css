@@ -4,9 +4,9 @@
   align-items: flex-start;
   justify-content: center;
 
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 
   width: 100vw;
   height: 100vh;
@@ -73,11 +73,8 @@
   0% {
     bottom: 80px;
   }
-  10% {
+  30% {
     bottom: 90px;
-  }
-  20% {
-    bottom: 80px;
   }
   80% {
     bottom: 80px;

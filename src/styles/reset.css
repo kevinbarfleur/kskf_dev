@@ -9,9 +9,9 @@ p {
 }
 
 .content {
-  height: 90vh;
+  /* height: 90vh;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   margin-top: 20vh;
-  justify-content: center;
+  justify-content: center; */
 }

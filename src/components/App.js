@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // Navbar & Footer Components
 import Navbar from './Navbar'
-// import Footer from './Footer'
+import Footer from './Footer'
 
 // Pages
 import Home from './home/Home'
@@ -29,12 +29,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="app_container">
+        <Fragment>
           <Navbar ref="navbarComponent" />
 
           <div className="content" onClick={this.closeNavbar}>
             <Route exact path="/" component={Home} />
-            <Route path="/ecole" component={School} />
             <Route path="/ecole" component={School} />
             <Route path="/arts-martiaux" component={Martials_Arts} />
             <Route path="/actualites" component={Actuality} />
@@ -42,8 +41,8 @@ class App extends Component {
             <Route path="/contacts" component={Contacts} />
           </div>
 
-          {/* <Footer /> */}
-        </div>
+          <Footer />
+        </Fragment>
       </Router>
     )
   }

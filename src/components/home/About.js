@@ -18,36 +18,31 @@ class About extends Component {
           </h2>
           <div className="container__section">
             <div className="subsection img">
-              <div className="subsection">
-                <div className="subsection img">
-                  <img
-                    className="about__image"
-                    src={image_about1}
-                    alt="salut kung fu kskf"
-                  />
-                </div>
-                <div className="subsection">
-                  <h3>Que faisons nous ?</h3>
-                  <p>
-                    Notre pratique s'inscrit à travers l'étude de techniques
-                    martiales, où chaque élève devient un expérimentateur, un
-                    chercheur qui veut découvrir son être profond.
-                  </p>
-                  <p>
-                    Dans ce cadre chaque pratiquant quelque soit son âge, son
-                    niveau et ses capacités s'engage sur un chemin, sur une voie
-                    où seule la persévérance lui permettra de progresser.
-                  </p>
-                  <p>
-                    La pratique du Kung Fu tel que nous l'entendons et que nous
-                    voulons l'enseigner, s'adresse en premier lieu au corps,
-                    mais doit en chaque occasion toucher aussi l'esprit. C'est
-                    vouloir en permanence unir ce corps et cet esprit qui
-                    constitue le fondement de notre art.
-                  </p>
-                </div>
-              </div>
-
+              <img
+                className="about__image"
+                src={image_about1}
+                alt="salut kung fu kskf"
+              />
+            </div>
+            <div className="subsection">
+              <h3>Que faisons nous ?</h3>
+              <p>
+                Notre pratique s'inscrit à travers l'étude de techniques
+                martiales, où chaque élève devient un expérimentateur, un
+                chercheur qui veut découvrir son être profond.
+              </p>
+              <p>
+                Dans ce cadre chaque pratiquant quelque soit son âge, son niveau
+                et ses capacités s'engage sur un chemin, sur une voie où seule
+                la persévérance lui permettra de progresser.
+              </p>
+              <p>
+                La pratique du Kung Fu tel que nous l'entendons et que nous
+                voulons l'enseigner, s'adresse en premier lieu au corps, mais
+                doit en chaque occasion toucher aussi l'esprit. C'est vouloir en
+                permanence unir ce corps et cet esprit qui constitue le
+                fondement de notre art.
+              </p>
               <p className="more-link">
                 <Link to="/arts-martiaux">Plus de détails &#8594;</Link>
               </p>
@@ -59,49 +54,6 @@ class About extends Component {
           </div>
 
           <Preview />
-
-          {/* <div className="container__section preview">
-            <div className="half-preview">
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-            </div>
-            <div className="half-preview">
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-              <div className="img-gallery">
-                <img src="https://via.placeholder.com/150" alt="" />
-              </div>
-            </div>
-          </div> */}
 
           <div className="separator_preview" />
 
@@ -127,8 +79,6 @@ class About extends Component {
                 moderne rend de plus en plus difficile les possibilités de
                 mettre en adéquation sa pratique et ses objectifs.
               </p>
-            </div>
-            <div className="subsection">
               <p className="more-link">
                 <Link to="/arts-martiaux">En savoir plus &#8594;</Link>
               </p>
@@ -142,7 +92,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="container__section">
+          {/* <div className="container__section">
             <div className="subsection backmi__image">
               <img
                 className="about__image"
@@ -176,8 +126,7 @@ class About extends Component {
                 permettront aux élèves de se rappeler le sens de leur pratique.
               </p>
             </div>
-          </div>
-          <Footer />
+          </div> */}
         </div>
       </React.Fragment>
     )

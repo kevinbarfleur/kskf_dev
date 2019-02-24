@@ -4,8 +4,6 @@ import Position from './Position'
 
 // Style
 import '../../styles/contacts.css'
-import Footer from '../Footer'
-// import { Browser } from 'leaflet'
 
 class Contacts extends Component {
   render() {
@@ -78,7 +76,6 @@ class Contacts extends Component {
             </p>
           </div>
           <Position />
-          <Footer />
         </div>
       </React.Fragment>
     )

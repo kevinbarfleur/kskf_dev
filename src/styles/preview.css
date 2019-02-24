@@ -4,8 +4,40 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  /* position: relative; */
 }
+
+.tiles .tile {
+  margin: 20px;
+}
+
+.tiles img {
+  cursor: pointer;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.tiles img:hover {
+  /* transform: scale(1.05);
+  transition: 0.2s; */
+}
+
+.tiles img.zoomed {
+  cursor: pointer;
+  /* margin: auto; */
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: white;
+  transform: translateZ(0);
+}
+
 @media only screen and (max-width: 740px) {
   .tiles {
     padding: 20px;

@@ -1,27 +1,20 @@
 .container__about {
-  position: absolute;
-  top: 100vh;
-  left: 0px;
-  width: 100vw;
-
   display: flex;
-  flex-direction: column;
-
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
 
 .container__section {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 200px;
 }
 
 .container__section.preview {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 @media only screen and (max-width: 1119px) {
@@ -34,7 +27,7 @@
 .subsection {
   padding: 20px;
   max-width: 520px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .subsection p {
@@ -70,6 +63,7 @@
 }
 
 .about__image {
+  z-index: -1;
   width: 90%;
   position: relative;
   top: 50%;
