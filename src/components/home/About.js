@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 // Components
 import Preview from './Preview'
-import Footer from '../Footer'
+import ZoomImg from '../tools/ZoomImg'
 
 const image_about1 = require('../../images/home/about_1.jpg')
 const image_about2 = require('../../images/home/about_2.jpg')
@@ -15,9 +15,9 @@ class About extends Component {
     return (
       <React.Fragment>
         <div className="container__about">
-          <h2 className="title__about">
+          {/* <h2 className="title__about">
             Karukera Shaolin Kung Fu <div className="subline" />
-          </h2>
+          </h2> */}
           <div className="container__section">
             <div className="subsection img">
               <img

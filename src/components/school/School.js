@@ -4,6 +4,13 @@ import posed from 'react-pose'
 // Styles
 import '../../styles/school.css'
 
+const school_1 = require('../../images/school/school_1.jpg')
+const school_2 = require('../../images/school/school_2.jpg')
+const school_3 = require('../../images/school/school_3.jpg')
+const school_4 = require('../../images/school/school_4.jpg')
+const school_5 = require('../../images/school/school_5.jpg')
+const school_6 = require('../../images/school/school_6.jpg')
+
 const Container = posed.div({
   enter: { staggerChildren: 50 }
 })
@@ -66,10 +73,7 @@ class School extends Component {
                 <br />
                 <p>L’art du Kung Fu est à plusieurs étages.</p>
                 <br />
-                <img
-                  src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                  alt="placeholder images"
-                />
+                <img src={school_1} alt="placeholder images" />
                 <p>
                   L’intérêt de la pratique est de les gravir un à un avec les
                   difficultés liées à une ascension. Le voyage est merveilleux
@@ -108,17 +112,11 @@ class School extends Component {
               </div>
               <div id="logo">
                 <h2 className="title-school-section">Le logo de l'école</h2>
-                <img
-                  src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                  alt="placeholder images"
-                />
+                <img src={school_2} alt="placeholder images" />
               </div>
               <div id="maitre">
                 <h2 className="title-school-section">Notre Maitre</h2>
-                <img
-                  src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                  alt="placeholder images"
-                />
+                <img src={school_3} alt="placeholder images" />
                 <p>
                   C’est en 1985 que nous avons rencontré Maître HUYNH CHIEU Long
                   <br />. A l’époque au sein de l’association niçoise de kung fu
@@ -160,10 +158,7 @@ class School extends Component {
               </div>
               <div id="karukera">
                 <h2 className="title-school-section">Karukéra</h2>
-                <img
-                  src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                  alt="placeholder images"
-                />
+                <img src={school_4} alt="placeholder images" />
                 <p>
                   La Guadeloupe est un archipel d’îles situées dans les Petites
                   Antilles, entre l’océan Atlantique et la mer des Caraïbes.
@@ -208,10 +203,7 @@ class School extends Component {
                   dans ce ciment dans cette recherche de l'idée de peuple.{' '}
                 </p>
                 <br />
-                <img
-                  src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                  alt="placeholder images"
-                />
+                <img src={school_5} alt="placeholder images" />
                 <p>
                   Malgré les divergences, ce mélange des genres se passe plutôt
                   bien en Guadeloupe. Les communautés coexistent dans une
@@ -252,10 +244,7 @@ class School extends Component {
                     eaux",{' '}
                   </i>
                 </p>
-                <img
-                  src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                  alt="placeholder images"
-                />
+                <img src={school_6} alt="placeholder images" />
               </div>
             </Subsection>
           </div>

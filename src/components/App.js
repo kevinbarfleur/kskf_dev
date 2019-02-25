@@ -34,10 +34,10 @@ class App extends Component {
 
   render() {
     return (
-      <Route
-        render={({ location }) => (
-          <Fragment>
-            <Navbar ref="navbarComponent" />
+      <Fragment>
+        <Navbar ref="navbarComponent" />
+        <Route
+          render={({ location }) => (
             <div className="content" onClick={this.closeNavbar}>
               <PoseGroup>
                 <RouteContainer key={location.pathname}>
@@ -68,10 +68,10 @@ class App extends Component {
                 </RouteContainer>
               </PoseGroup>
             </div>
-            <Footer />
-          </Fragment>
-        )}
-      />
+          )}
+        />
+        <Footer />
+      </Fragment>
     )
   }
 }

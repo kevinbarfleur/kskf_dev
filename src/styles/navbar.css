@@ -21,7 +21,7 @@
   }
 
   .link__home {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'IM Fell English SC', serif;
     position: absolute;
   }
 }
@@ -32,8 +32,8 @@
 }
 
 .link__home a {
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-family: 'IM Fell English SC', serif;
 }
 
 .navbar li {
@@ -65,7 +65,9 @@
 @media screen and (max-width: 860px) {
   .navbar {
     z-index: 1;
-    margin: 15px;
+    top: 15px;
+    right: 15px;
+    /* margin: 15px; */
     position: relative;
     display: flex;
     flex-direction: row-reverse;

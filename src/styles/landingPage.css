@@ -26,8 +26,7 @@
 }
 
 .home__title {
-  font-family: 'GFS Didot', serif;
-  font-weight: 500;
+  /* font-family: 'GFS Didot', serif; */
 
   padding: 10px 20px;
   margin-left: 10%;
@@ -39,19 +38,22 @@
 }
 
 .home__title h1 {
-  /* font-size: 1.2em; */
+  font-family: 'IM Fell English SC', serif;
+  font-size: 3em;
   margin: 50px auto;
 }
 .home__title p {
-  font-weight: 400;
+  font-weight: 300;
 }
 .home__title button {
   font-family: 'Montserrat', sans-serif;
+  color: lightgray;
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 50px auto;
   font-size: 1em;
   padding: 10px;
 
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
 }
 .home__title button:hover {

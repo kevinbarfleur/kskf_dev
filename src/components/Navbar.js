@@ -65,7 +65,7 @@ class Navbar extends Component {
           </li>
           <li className="navbar__link link__home">
             <Link to="/" style={{ textDecoration: 'none' }}>
-              Karukera Shaolin Kung Fu
+              KSKF
             </Link>
           </li>
         </div>
