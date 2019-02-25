@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 // Components
 import Preview from './Preview'
-import ZoomImg from '../tools/ZoomImg'
 
 const image_about1 = require('../../images/home/about_1.jpg')
 const image_about2 = require('../../images/home/about_2.jpg')

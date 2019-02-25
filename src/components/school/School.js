@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import posed from 'react-pose'
+import { Link, Element } from 'react-scroll'
+
+// Components
 
 // Styles
 import '../../styles/school.css'
@@ -26,18 +29,60 @@ class School extends Component {
       <React.Fragment>
         <Container>
           <div className="container-school">
+            <Element name="topPage" className="element_topPage" />
             <Subsection>
-              <h2 className="title-school">L'école</h2>
-            </Subsection>
-            {/* <Subsection>
-              <img
-                src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                alt="placeholder images"
-              />
-            </Subsection> */}
-            <Subsection>
-              <ul className="summary-school">
-                <li>
+              <div className="summaryContainer">
+                <Subsection>
+                  <h1 className="title-school">L'école</h1>
+                </Subsection>
+
+                <Subsection>
+                  <ul className="summary-school">
+                    <li>
+                      <Link
+                        activeClass="active"
+                        className="presentation"
+                        to="presentation"
+                        smooth={true}
+                        duration={1500}
+                      >
+                        Présentation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        activeClass="active"
+                        className="logoEcole"
+                        to="logoEcole"
+                        smooth={true}
+                        duration={1500}
+                      >
+                        Le logo de l'école
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        activeClass="active"
+                        className="maitre"
+                        to="maitre"
+                        smooth={true}
+                        duration={1500}
+                      >
+                        Notre Maitre
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        activeClass="active"
+                        className="karukera"
+                        to="karukera"
+                        smooth={true}
+                        duration={1500}
+                      >
+                        Karukéra
+                      </Link>
+                    </li>
+                    {/* <li>
                   <a href="#presentation">Présentation</a>
                 </li>
                 <li>
@@ -48,12 +93,23 @@ class School extends Component {
                 </li>
                 <li>
                   <a href="#karukera">Karukéra</a>
-                </li>
-              </ul>
+                </li> */}
+                  </ul>
+                </Subsection>
+              </div>
             </Subsection>
+            {/* <Subsection>
+              <img
+                src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
+                alt="placeholder images"
+              />
+            </Subsection> */}
             <Subsection>
               <div id="presentation">
-                <h2 className="title-school-section">Présentation</h2>
+                <Element name="presentation" className="element_presentation">
+                  <h2 className="title-school-section">Présentation</h2>
+                </Element>
+
                 <p>
                   Notre pratique s'inscrit à travers l'étude de techniques
                   martiales, où chaque élève devient un expérimentateur, un
@@ -111,11 +167,16 @@ class School extends Component {
                 </p>
               </div>
               <div id="logo">
-                <h2 className="title-school-section">Le logo de l'école</h2>
+                <Element name="logoEcole" className="element_logoEcole">
+                  <h2 className="title-school-section">Le logo de l'école</h2>
+                </Element>
+
                 <img src={school_2} alt="placeholder images" />
               </div>
               <div id="maitre">
-                <h2 className="title-school-section">Notre Maitre</h2>
+                <Element name="maitre" className="element_maitre">
+                  <h2 className="title-school-section">Notre Maitre</h2>
+                </Element>
                 <img src={school_3} alt="placeholder images" />
                 <p>
                   C’est en 1985 que nous avons rencontré Maître HUYNH CHIEU Long
@@ -157,7 +218,9 @@ class School extends Component {
                 </p>
               </div>
               <div id="karukera">
-                <h2 className="title-school-section">Karukéra</h2>
+                <Element name="karukera" className="element_karukera">
+                  <h2 className="title-school-section">Karukéra</h2>
+                </Element>
                 <img src={school_4} alt="placeholder images" />
                 <p>
                   La Guadeloupe est un archipel d’îles situées dans les Petites
@@ -245,6 +308,18 @@ class School extends Component {
                   </i>
                 </p>
                 <img src={school_6} alt="placeholder images" />
+              </div>
+            </Subsection>
+            <Subsection>
+              <div className="goTopSchool">
+                <Link
+                  activeClass="active"
+                  to="topPage"
+                  smooth={true}
+                  duration={1500}
+                >
+                  <i class="fas fa-arrow-circle-up fa-3x" />
+                </Link>
               </div>
             </Subsection>
           </div>

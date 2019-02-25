@@ -74,7 +74,11 @@ class Navbar extends Component {
           <li className="navbar__link link__home">
             <Link
               to="/"
-              style={{ textDecoration: 'none' }}
+              style={{
+                textDecoration: 'none',
+                fontFamily: 'Montserrat',
+                fontSize: 14
+              }}
               onClick={this.toggleNavState}
             >
               {' '}
