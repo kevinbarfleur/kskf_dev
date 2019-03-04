@@ -1,0 +1,31 @@
+.sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.summary-blog {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  list-style: none;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.summary-blog li {
+  padding: 20px;
+}
+
+.summary-blog:first-child {
+  padding-left: 80px;
+}
+.summary-blog:last-child {
+  padding-right: 80px;
+}
+
+.summary-blog li:hover {
+  cursor: pointer;
+}

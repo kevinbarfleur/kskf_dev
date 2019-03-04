@@ -40,27 +40,32 @@ class Navbar extends Component {
         <div>
           <li className="navbar__link">
             <Link to="/contacts" style={{ textDecoration: 'none' }}>
-              Contacts
+              <i className="fas fa-mail-bulk" /> Contacts
             </Link>
           </li>
           <li className="navbar__link">
             <Link to="/gallerie" style={{ textDecoration: 'none' }}>
-              Gallerie
+              <i className="far fa-images" /> Gallerie
             </Link>
           </li>
           <li className="navbar__link">
             <Link to="/actualites" style={{ textDecoration: 'none' }}>
-              Actualités
+              <i className="far fa-newspaper" /> Actualités
             </Link>
           </li>
           <li className="navbar__link">
             <Link to="/arts-martiaux" style={{ textDecoration: 'none' }}>
-              Arts Martiaux
+              <i className="fas fa-fist-raised" /> Arts Martiaux
             </Link>
           </li>
           <li className="navbar__link">
             <Link to="/ecole" style={{ textDecoration: 'none' }}>
-              L'école
+              <i className="fas fa-graduation-cap" /> L'école
+            </Link>
+          </li>
+          <li className="navbar__link">
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <i className="fas fa-home" /> Acceuil
             </Link>
           </li>
           <li className="navbar__link link__home">
@@ -82,7 +87,7 @@ class Navbar extends Component {
               onClick={this.toggleNavState}
             >
               {' '}
-              Acceuil
+              <i className="fas fa-home" /> Acceuil
             </Link>
           </li>
           <li className="navbar__link">
@@ -92,7 +97,7 @@ class Navbar extends Component {
               onClick={this.toggleNavState}
             >
               {' '}
-              L'école
+              <i className="fas fa-graduation-cap" /> L'école
             </Link>
           </li>
           <li className="navbar__link">
@@ -101,7 +106,7 @@ class Navbar extends Component {
               style={{ textDecoration: 'none' }}
               onClick={this.toggleNavState}
             >
-              Arts Martiaux
+              <i className="fas fa-fist-raised" /> Arts Martiaux
             </Link>
           </li>
           <li className="navbar__link">
@@ -111,7 +116,7 @@ class Navbar extends Component {
               onClick={this.toggleNavState}
             >
               {' '}
-              Actualités
+              <i className="far fa-newspaper" /> Actualités
             </Link>
           </li>
           <li className="navbar__link">
@@ -120,7 +125,7 @@ class Navbar extends Component {
               style={{ textDecoration: 'none' }}
               onClick={this.toggleNavState}
             >
-              Gallerie
+              <i className="far fa-images" /> Gallerie
             </Link>
           </li>
           <li className="navbar__link">
@@ -129,7 +134,7 @@ class Navbar extends Component {
               style={{ textDecoration: 'none' }}
               onClick={this.toggleNavState}
             >
-              Contacts
+              <i className="fas fa-mail-bulk" /> Contacts
             </Link>
           </li>
         </div>

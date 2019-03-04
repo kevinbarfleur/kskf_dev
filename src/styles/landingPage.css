@@ -38,12 +38,14 @@
 }
 
 .home__title h1 {
-  font-family: 'IM Fell English SC', serif;
+  /* font-family: 'IM Fell English SC', serif; */
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 100;
   font-size: 3em;
   margin: 50px auto;
 }
 .home__title p {
-  font-weight: 300;
+  font-weight: 400;
 }
 .home__title button {
   font-family: 'Montserrat', sans-serif;
@@ -55,6 +57,8 @@
 
   border-radius: 5px;
   border: none;
+  overflow: hidden;
+  outline: none;
 }
 .home__title button:hover {
   cursor: pointer;

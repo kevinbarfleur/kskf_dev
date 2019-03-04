@@ -27,14 +27,20 @@
 }
 
 .navbar ul {
+  position: relative;
   display: inline-block;
   width: 100%;
+}
+
+.link__home {
+  transform: translateY(-4px);
 }
 
 .link__home a {
   /* font-size: 1em;
   font-family: 'Montserrat', sans-serif; */
-  font-family: 'IM Fell English SC', serif;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.5em;
 }
 
 .navbar li {
@@ -44,6 +50,10 @@
   list-style: none;
   font-size: 14px;
   padding: 15px;
+}
+
+.navbar li i {
+  margin-right: 10px;
 }
 
 .navbar a {

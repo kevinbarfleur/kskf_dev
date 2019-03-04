@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { Element } from 'react-scroll'
 
 // Components
 import Preview from './Preview'
 
 const image_about1 = require('../../images/home/about_1.jpg')
 const image_about2 = require('../../images/home/about_2.jpg')
-// const image_bachmi = require('../../images/home/bachmi.jpg')
 
 class About extends Component {
   state = {}
@@ -17,38 +17,40 @@ class About extends Component {
           {/* <h2 className="title__about">
             Karukera Shaolin Kung Fu <div className="subline" />
           </h2> */}
-          <div className="container__section">
-            <div className="subsection img">
-              <img
-                className="about__image"
-                src={image_about1}
-                alt="salut kung fu kskf"
-              />
+          <Element name="about">
+            <div className="container__section">
+              <div className="subsection img">
+                <img
+                  className="about__image"
+                  src={image_about1}
+                  alt="salut kung fu kskf"
+                />
+              </div>
+              <div className="subsection">
+                <h3>Que faisons nous ?</h3>
+                <p>
+                  Notre pratique s'inscrit à travers l'étude de techniques
+                  martiales, où chaque élève devient un expérimentateur, un
+                  chercheur qui veut découvrir son être profond.
+                </p>
+                <p>
+                  Dans ce cadre chaque pratiquant quelque soit son âge, son
+                  niveau et ses capacités s'engage sur un chemin, sur une voie
+                  où seule la persévérance lui permettra de progresser.
+                </p>
+                <p>
+                  La pratique du Kung Fu tel que nous l'entendons et que nous
+                  voulons l'enseigner, s'adresse en premier lieu au corps, mais
+                  doit en chaque occasion toucher aussi l'esprit. C'est vouloir
+                  en permanence unir ce corps et cet esprit qui constitue le
+                  fondement de notre art.
+                </p>
+                <p className="more-link">
+                  <Link to="/arts-martiaux">Plus de détails &#8594;</Link>
+                </p>
+              </div>
             </div>
-            <div className="subsection">
-              <h3>Que faisons nous ?</h3>
-              <p>
-                Notre pratique s'inscrit à travers l'étude de techniques
-                martiales, où chaque élève devient un expérimentateur, un
-                chercheur qui veut découvrir son être profond.
-              </p>
-              <p>
-                Dans ce cadre chaque pratiquant quelque soit son âge, son niveau
-                et ses capacités s'engage sur un chemin, sur une voie où seule
-                la persévérance lui permettra de progresser.
-              </p>
-              <p>
-                La pratique du Kung Fu tel que nous l'entendons et que nous
-                voulons l'enseigner, s'adresse en premier lieu au corps, mais
-                doit en chaque occasion toucher aussi l'esprit. C'est vouloir en
-                permanence unir ce corps et cet esprit qui constitue le
-                fondement de notre art.
-              </p>
-              <p className="more-link">
-                <Link to="/arts-martiaux">Plus de détails &#8594;</Link>
-              </p>
-            </div>
-          </div>
+          </Element>
 
           <div className="preview_title">
             <h3>Aperçu</h3>

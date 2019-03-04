@@ -1,0 +1,61 @@
+.container-blog {
+  padding-top: 10vh;
+  margin: auto;
+  width: 60vw;
+  line-height: 29px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 860px) {
+  .container-blog {
+    width: 80%;
+  }
+}
+
+.container-blog img {
+  width: 100%;
+  margin: 60px auto;
+}
+
+.container-blog ul {
+  margin: auto 20px;
+}
+
+.title-blog {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 5em;
+  padding: 15% 0% 100px 0%;
+  font-weight: 500;
+  margin: 20px auto;
+  color: black;
+}
+
+.title-blog-section {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 3em;
+  margin: 120px 0% 20px 0%;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  font-weight: 500;
+}
+
+.element_topPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.goTopBlog i {
+  color: #ededed;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: 0.2s;
+}
+
+.goTopBlog i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+  position: fixed;
+}

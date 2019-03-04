@@ -3,15 +3,16 @@ import posed from 'react-pose'
 import { Link, Element } from 'react-scroll'
 
 // Components
+import { MartialArtBlogNavigation } from '../tools/BlogNavigation'
 
 // Styles
-import '../../styles/martialsArts.css'
+import '../../styles/blog.css'
 
-const martials_1 = require('../../images/martialsarts/martials_1.jpg')
-const martials_2 = require('../../images/martialsarts/martials_2.jpg')
-const martials_3 = require('../../images/martialsarts/martials_3.jpg')
-const martials_4 = require('../../images/martialsarts/martials_4.jpg')
-const martials_5 = require('../../images/martialsarts/martials_5.jpg')
+const MartialArts_1 = require('../../images/martialsarts/martials_1.jpg')
+const MartialArts_2 = require('../../images/martialsarts/martials_2.jpg')
+const MartialArts_3 = require('../../images/martialsarts/martials_3.jpg')
+const MartialArts_4 = require('../../images/martialsarts/martials_4.jpg')
+const MartialArts_5 = require('../../images/martialsarts/martials_5.jpg')
 
 const Container = posed.div({
   enter: { staggerChildren: 50 }
@@ -27,72 +28,16 @@ class MartialsArts extends Component {
     return (
       <React.Fragment>
         <Container>
-          <div className="container-martials">
+          <div className="container-blog">
             <Element name="topPage" className="element_topPage" />
             <Subsection>
               <div className="summaryContainer">
                 <Subsection>
-                  <h1 className="title-martials">Les Arts Martiaux</h1>
+                  <h1 className="title-blog">Les Arts Martiaux</h1>
                 </Subsection>
 
                 <Subsection>
-                  <ul className="summary-martials">
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="kungfu"
-                        to="kungfu"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Le Kung Fu Shaolin
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="taichi"
-                        to="taichi"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Tai Chi et Chi Kung
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="style"
-                        to="style"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Notre Style
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="soinsEnergetiques"
-                        to="soinsEnergetiques"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Soins énergétiques
-                      </Link>
-                    </li>
-                    {/* <li>
-                      <Link
-                        activeClass="active"
-                        className="techniques"
-                        to="techniques"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Techniques
-                      </Link>
-                    </li> */}
-                  </ul>
+                  <MartialArtBlogNavigation />
                 </Subsection>
               </div>
             </Subsection>
@@ -100,7 +45,7 @@ class MartialsArts extends Component {
             <Subsection>
               <div id="kungfu">
                 <Element name="kungfu" className="element_presentation">
-                  <h2 className="title-martials-section">Le Kung Fu Shaolin</h2>
+                  <h2 className="title-blog-section">Le Kung Fu Shaolin</h2>
                 </Element>
 
                 <p>
@@ -168,22 +113,20 @@ class MartialsArts extends Component {
                   <i>« Qui veut gravir une montagne commence par le bas » </i>
                 </p>
                 <br />
-                <img src={martials_1} alt="placeholder images" />
+                <img src={MartialArts_1} alt="placeholder images" />
               </div>
               <div id="taichi">
                 <Element name="taichi" className="element_taichi">
-                  <h2 className="title-martials-section">
-                    Tai Chi et Chi Kung
-                  </h2>
+                  <h2 className="title-blog-section">Tai Chi et Chi Kung</h2>
                 </Element>
 
-                <img src={martials_2} alt="placeholder images" />
+                <img src={MartialArts_2} alt="placeholder images" />
               </div>
               <div id="style">
                 <Element name="style" className="element_style">
-                  <h2 className="title-martials-section">Notre Style</h2>
+                  <h2 className="title-blog-section">Notre Style</h2>
                 </Element>
-                <img src={martials_3} alt="placeholder images" />
+                <img src={MartialArts_3} alt="placeholder images" />
                 <p>
                   Au début du XIème siècle, Grand-Maître Bodhidharma 28ème
                   patriarche aux Indes, s’installait dans le monastère de
@@ -281,9 +224,9 @@ class MartialsArts extends Component {
                   name="soinsEnergetiques"
                   className="element_soinsEnergetique"
                 >
-                  <h2 className="title-martials-section">Soins Énergétiques</h2>
+                  <h2 className="title-blog-section">Soins Énergétiques</h2>
                 </Element>
-                <img src={martials_4} alt="placeholder images" />
+                <img src={MartialArts_4} alt="placeholder images" />
                 <p>
                   La Guadeloupe est un archipel d’îles situées dans les Petites
                   Antilles, entre l’océan Atlantique et la mer des Caraïbes.
@@ -328,7 +271,7 @@ class MartialsArts extends Component {
                   dans ce ciment dans cette recherche de l'idée de peuple.{' '}
                 </p>
                 <br />
-                <img src={martials_5} alt="placeholder images" />
+                <img src={MartialArts_5} alt="placeholder images" />
                 <p>
                   Malgré les divergences, ce mélange des genres se passe plutôt
                   bien en Guadeloupe. Les communautés coexistent dans une
@@ -372,7 +315,7 @@ class MartialsArts extends Component {
               </div>
             </Subsection>
             <Subsection>
-              <div className="goTopmartials">
+              <div className="goTopBlog">
                 <Link
                   activeClass="active"
                   to="topPage"

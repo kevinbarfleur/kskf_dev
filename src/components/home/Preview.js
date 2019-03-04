@@ -83,13 +83,38 @@ class Preview extends React.Component {
 }
 
 class Tiles extends React.Component {
+  constructor() {
+    super()
+
+    this.state = {
+      width: 200,
+      height: 200
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resizeHandler)
+  }
+
+  componentWillMount() {
+    window.removeEventListener('resize', this.resizeHandler)
+  }
+
+  resizeHandler = () => {
+    if (window.innerWidth <= 740) {
+      this.setState({ width: 120, height: 120 })
+    } else {
+      this.setState({ width: 200, height: 200 })
+    }
+  }
+
   render() {
     return (
       <div className="tiles">
         {this.props.data.map((data, index) => (
           <ZoomImg
-            imageWidth={200}
-            imageHeight={200}
+            imageWidth={this.state.width}
+            imageHeight={this.state.height}
             src={data.image}
             key={index}
             alt={data.name}

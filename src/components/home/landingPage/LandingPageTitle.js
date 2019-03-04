@@ -1,5 +1,7 @@
 import React from 'react'
 import posed from 'react-pose'
+import { Link } from 'react-scroll'
+
 const Button = posed.button({
   hoverable: true,
   pressable: true,
@@ -23,7 +25,9 @@ const LandingPageTitle = () => (
       <h1>Karukera Shaolin Kung Fu</h1>
       <p>École de Kung Fu traditionnelle</p>
       <p>Baie - Mahault, Guadeloupe</p>
-      <Button>En savoir plus</Button>
+      <Link activeClass="active" to="about" smooth={true} duration={1500}>
+        <Button>En savoir plus</Button>
+      </Link>
     </div>
   </React.Fragment>
 )

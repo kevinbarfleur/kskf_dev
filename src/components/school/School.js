@@ -3,9 +3,10 @@ import posed from 'react-pose'
 import { Link, Element } from 'react-scroll'
 
 // Components
+import { SchoolBlogNavigation } from '../tools/BlogNavigation'
 
 // Styles
-import '../../styles/school.css'
+import '../../styles/blog.css'
 
 const school_1 = require('../../images/school/school_1.jpg')
 const school_2 = require('../../images/school/school_2.jpg')
@@ -28,73 +29,16 @@ class School extends Component {
     return (
       <React.Fragment>
         <Container>
-          <div className="container-school">
+          <div className="container-blog">
             <Element name="topPage" className="element_topPage" />
             <Subsection>
               <div className="summaryContainer">
                 <Subsection>
-                  <h1 className="title-school">L'école</h1>
+                  <h1 className="title-blog">L'école</h1>
                 </Subsection>
 
                 <Subsection>
-                  <ul className="summary-school">
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="presentation"
-                        to="presentation"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Présentation
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="logoEcole"
-                        to="logoEcole"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Le logo de l'école
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="maitre"
-                        to="maitre"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Notre Maitre
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        activeClass="active"
-                        className="karukera"
-                        to="karukera"
-                        smooth={true}
-                        duration={1500}
-                      >
-                        Karukéra
-                      </Link>
-                    </li>
-                    {/* <li>
-                  <a href="#presentation">Présentation</a>
-                </li>
-                <li>
-                  <a href="#logo">Le logo de l'école</a>
-                </li>
-                <li>
-                  <a href="#maitre">Notre Maitre</a>
-                </li>
-                <li>
-                  <a href="#karukera">Karukéra</a>
-                </li> */}
-                  </ul>
+                  <SchoolBlogNavigation />
                 </Subsection>
               </div>
             </Subsection>
@@ -107,7 +51,7 @@ class School extends Component {
             <Subsection>
               <div id="presentation">
                 <Element name="presentation" className="element_presentation">
-                  <h2 className="title-school-section">Présentation</h2>
+                  <h2 className="title-blog-section">Présentation</h2>
                 </Element>
 
                 <p>
@@ -168,14 +112,14 @@ class School extends Component {
               </div>
               <div id="logo">
                 <Element name="logoEcole" className="element_logoEcole">
-                  <h2 className="title-school-section">Le logo de l'école</h2>
+                  <h2 className="title-blog-section">Le logo de l'école</h2>
                 </Element>
 
                 <img src={school_2} alt="placeholder images" />
               </div>
               <div id="maitre">
                 <Element name="maitre" className="element_maitre">
-                  <h2 className="title-school-section">Notre Maitre</h2>
+                  <h2 className="title-blog-section">Notre Maitre</h2>
                 </Element>
                 <img src={school_3} alt="placeholder images" />
                 <p>
@@ -219,7 +163,7 @@ class School extends Component {
               </div>
               <div id="karukera">
                 <Element name="karukera" className="element_karukera">
-                  <h2 className="title-school-section">Karukéra</h2>
+                  <h2 className="title-blog-section">Karukéra</h2>
                 </Element>
                 <img src={school_4} alt="placeholder images" />
                 <p>
@@ -311,14 +255,14 @@ class School extends Component {
               </div>
             </Subsection>
             <Subsection>
-              <div className="goTopSchool">
+              <div className="goTopBlog">
                 <Link
                   activeClass="active"
                   to="topPage"
                   smooth={true}
                   duration={1500}
                 >
-                  <i class="fas fa-arrow-circle-up fa-3x" />
+                  <i className="fas fa-arrow-circle-up fa-3x" />
                 </Link>
               </div>
             </Subsection>
