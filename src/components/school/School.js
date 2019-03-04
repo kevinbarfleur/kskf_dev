@@ -35,8 +35,11 @@ class School extends Component {
               <div className="summaryContainer">
                 <Subsection>
                   <h1 className="title-blog">L'école</h1>
+                  <p className="blog-date">
+                    <i>28 Novembre 2019</i>
+                  </p>
                 </Subsection>
-
+                <img src={school_6} alt="placeholder images" />
                 <Subsection>
                   <SchoolBlogNavigation />
                 </Subsection>
@@ -53,21 +56,25 @@ class School extends Component {
                 <p>
                   Notre pratique s'inscrit à travers l'étude de techniques
                   martiales, où chaque élève devient un expérimentateur, un
-                  chercheur qui veut découvrir son être profond. <br />
+                  chercheur qui veut <i>découvrir son être profond.</i> <br />
                   Dans ce cadre chaque pratiquant quelque soit son âge, son
                   niveau et ses capacités s'engage sur un chemin, sur une voie
                   où seule la persévérance lui permettra de progresser.
                 </p>
                 <br />
                 <p>
-                  La pratique du Kung Fu tel que nous l'entendons et que nous
-                  voulons l'enseigner, s'adresse en premier lieu au corps, mais
-                  doit en chaque occasion toucher aussi l'esprit. C'est vouloir
-                  en permanence unir ce corps et cet esprit qui constitue le
-                  fondement de notre art.
+                  <b>
+                    La pratique du Kung Fu tel que nous l'entendons et que nous
+                    voulons l'enseigner, s'adresse en premier lieu au corps,
+                    mais doit en chaque occasion toucher aussi l'esprit.
+                  </b>{' '}
+                  C'est vouloir en permanence unir ce corps et cet esprit qui
+                  constitue le fondement de notre art.
                 </p>
                 <br />
-                <p>L’art du Kung Fu est à plusieurs étages.</p>
+                <p>
+                  <i>L’art du Kung Fu est à plusieurs étages.</i>
+                </p>
                 <br />
                 <img src={school_1} alt="placeholder images" />
                 <p>
@@ -86,7 +93,7 @@ class School extends Component {
                 </p>
                 <br />
                 <p>
-                  La santé est aussi une des priorités de notre façon de
+                  La <b>santé</b> est aussi une des priorités de notre façon de
                   pratiquer. Toute pratique physique qui n'assure pas un respect
                   de l'intégrité du corps est, selon nous, une ineptie.
                   Développer l'endurance, la force, la souplesse, le souffle,
@@ -123,8 +130,9 @@ class School extends Component {
                 </Element>
                 <img src={school_3} alt="placeholder images" />
                 <p>
-                  C’est en 1985 que nous avons rencontré Maître HUYNH CHIEU Long
-                  <br />. A l’époque au sein de l’association niçoise de kung fu
+                  C’est en <b>1985</b> que nous avons rencontré{' '}
+                  <b>Maître HUYNH CHIEU Long</b>.
+                  <br />A l’époque au sein de l’association niçoise de kung fu
                   Shaolin Nous avons appris sous son enseignement les bases du
                   kung fu. Durant cette période le maître a participé activement
                   au développement des arts martiaux dans les alpes maritimes et
@@ -170,10 +178,10 @@ class School extends Component {
                 </Element>
                 <img src={school_4} alt="placeholder images" />
                 <p>
-                  La Guadeloupe est un archipel d’îles situées dans les Petites
-                  Antilles, entre l’océan Atlantique et la mer des Caraïbes.
-                  Elle est constituée de deux îles : la Grande-Terre plate et
-                  calcaire et la Basse-Terre montagneuse, volcanique et
+                  La <b>Guadeloupe</b> est un archipel d’îles situées dans les
+                  Petites Antilles, entre l’océan Atlantique et la mer des
+                  Caraïbes. Elle est constituée de deux îles : la Grande-Terre
+                  plate et calcaire et la Basse-Terre montagneuse, volcanique et
                   recouverte d’une épaisse forêt tropicale.{' '}
                 </p>
                 <br />
@@ -188,14 +196,17 @@ class School extends Component {
                 <p>
                   La Guadeloupe est un mélange d'origines et de cultures, assez
                   représentatif du reste du monde. Elle est multiethnique, et
-                  pluriculturelle. Les Noirs sont majoritaires, originaires
-                  d'Afrique, issus de l'histoire tragique de l'esclavage. Outre
-                  cette population; on y trouve, une importante communauté
-                  d'Indiens venus de l'Inde au lendemain de l'abolition de
-                  l'esclavage (1848), des Libanais, des Syriens, des Haïtiens,
-                  des Blancs békés et Blancs "pays", descendants des colons, et
-                  bien sûr, les Français métropolitains ; les "métros", venus de
-                  l'Hexagone, dit "métropole".{' '}
+                  pluriculturelle.{' '}
+                  <i>
+                    Les Noirs sont majoritaires, originaires d'Afrique, issus de
+                    l'histoire tragique de l'esclavage. Outre cette population;
+                    on y trouve, une importante communauté d'Indiens venus de
+                    l'Inde au lendemain de l'abolition de l'esclavage (1848),
+                    des Libanais, des Syriens, des Haïtiens, des Blancs békés et
+                    Blancs "pays", descendants des colons, et bien sûr, les
+                    Français métropolitains ; les "métros", venus de l'Hexagone,
+                    dit "métropole".
+                  </i>{' '}
                 </p>
                 <br />
                 <p>
@@ -209,8 +220,12 @@ class School extends Component {
                   créolité, et beaucoup d'Antillais sont en quête de leur propre
                   identité. Le créole, langue parlé (de plus écrite
                   actuellement) est le principal élément de cette revendication
-                  d’appartenance à une culture , il joue donc le rôle essentiel
-                  dans ce ciment dans cette recherche de l'idée de peuple.{' '}
+                  d’appartenance à une culture ,{' '}
+                  <b>
+                    il joue donc le rôle essentiel dans ce ciment dans cette
+                    recherche de l'idée de peuple
+                  </b>
+                  .{' '}
                 </p>
                 <br />
                 <img src={school_5} alt="placeholder images" />
@@ -226,10 +241,11 @@ class School extends Component {
                 <p>
                   Le Guadeloupéen est par contre un féru de sport, comme
                   pratiquants ou comme supporters. Les sports médiatiques de
-                  masse y ont bien sûr la côte (football ; cyclisme ; athlétisme
-                  ; …) et les stars internationales sont assez nombreuses pour
-                  faire vibrer le chauvinisme local. Les arts martiaux arrivent
-                  tout de même à sortir leur épingle du jeu.{' '}
+                  masse y ont bien sûr la côte{' '}
+                  <i>(football ; cyclisme ; athlétisme ; …)</i> et les stars
+                  internationales sont assez nombreuses pour faire vibrer le
+                  chauvinisme local. Les arts martiaux arrivent tout de même à
+                  sortir leur épingle du jeu.{' '}
                 </p>
                 <br />
                 <p>
@@ -243,9 +259,11 @@ class School extends Component {
                 </p>
                 <br />
                 <p>
-                  Le kung fu n’échappe pas à cette règle et il se développe
-                  tranquillement. Il existe pour l’instant 5 clubs répartis dans
-                  l’île. Environ 250 licenciés pratiquent cet art.{' '}
+                  <b>
+                    Le kung fu n’échappe pas à cette règle et il se développe
+                    tranquillement. Il existe pour l’instant 5 clubs répartis
+                    dans l’île. Environ 250 licenciés pratiquent cet art.
+                  </b>{' '}
                 </p>
                 <br />
                 <p>

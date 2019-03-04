@@ -11,6 +11,7 @@
 }
 
 .tiles img {
+  z-index: 2000;
   cursor: pointer;
   display: block;
   max-width: 100%;
@@ -28,13 +29,15 @@
 }
 
 .frame {
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: none;
-  background: white;
+  /* background: white; */
+  background: rgba(0, 0, 0, 1);
   transform: translateZ(0);
 }
 

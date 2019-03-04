@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  color: #212121;
 }
 
 p {
   line-height: 29px;
   font-family: 'Montserrat', sans-serif;
+  /* color: #212121; */
 }
 
 .content {

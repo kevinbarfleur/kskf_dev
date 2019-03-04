@@ -34,8 +34,11 @@ class MartialsArts extends Component {
               <div className="summaryContainer">
                 <Subsection>
                   <h1 className="title-blog">Les Arts Martiaux</h1>
+                  <p className="blog-date">
+                    <i>7 Juillet 2019</i>
+                  </p>
                 </Subsection>
-
+                <img src={MartialArts_4} alt="placeholder images" />
                 <Subsection>
                   <MartialArtBlogNavigation />
                 </Subsection>

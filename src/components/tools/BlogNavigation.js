@@ -12,45 +12,45 @@ export class SchoolBlogNavigation extends React.Component {
             <li>
               <Link
                 activeClass="active"
-                className="presentation"
+                className="presentation underline_magical"
                 to="presentation"
                 smooth={true}
                 duration={1500}
               >
-                Présentation
+                <i className="fas fa-asterisk" /> Présentation
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                className="logoEcole"
+                className="logoEcole underline_magical"
                 to="logoEcole"
                 smooth={true}
                 duration={1500}
               >
-                Le logo de l'école
+                <i className="fas fa-asterisk" /> Le logo de l'école
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                className="maitre"
+                className="maitre underline_magical"
                 to="maitre"
                 smooth={true}
                 duration={1500}
               >
-                Notre Maitre
+                <i className="fas fa-asterisk" /> Notre Maitre
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                className="karukera"
+                className="karukera underline_magical"
                 to="karukera"
                 smooth={true}
                 duration={1500}
               >
-                Karukéra
+                <i className="fas fa-asterisk" /> Karukéra
               </Link>
             </li>
           </ul>
@@ -68,45 +68,45 @@ export class MartialArtBlogNavigation extends React.Component {
           <li>
             <Link
               activeClass="active"
-              className="kungfu"
+              className="kungfu underline_magical"
               to="kungfu"
               smooth={true}
               duration={1500}
             >
-              Le Kung Fu Shaolin
+              <i className="fas fa-asterisk" /> Le Kung Fu Shaolin
             </Link>
           </li>
           <li>
             <Link
               activeClass="active"
-              className="taichi"
+              className="taichi underline_magical"
               to="taichi"
               smooth={true}
               duration={1500}
             >
-              Tai Chi et Chi Kung
+              <i className="fas fa-asterisk" /> Tai Chi et Chi Kung
             </Link>
           </li>
           <li>
             <Link
               activeClass="active"
-              className="style"
+              className="style underline_magical"
               to="style"
               smooth={true}
               duration={1500}
             >
-              Notre Style
+              <i className="fas fa-asterisk" /> Notre Style
             </Link>
           </li>
           <li>
             <Link
               activeClass="active"
-              className="soinsEnergetiques"
+              className="soinsEnergetiques underline_magical"
               to="soinsEnergetiques"
               smooth={true}
               duration={1500}
             >
-              Soins énergétiques
+              <i className="fas fa-asterisk" /> Soins énergétiques
             </Link>
           </li>
         </ul>

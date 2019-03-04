@@ -1,13 +1,8 @@
 .summary-blog {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-
   list-style: none;
-  color: white;
+  color: #212121;
   border: none;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .summary-blog li {
@@ -15,8 +10,8 @@
   transition: 0.4s;
 }
 
-.summary-blog li:hover {
-  transition: 0.4s;
+.summary-blog li i {
+  padding-right: 10px;
   background: #ff4e50; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
