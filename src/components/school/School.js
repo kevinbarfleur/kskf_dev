@@ -42,16 +42,12 @@ class School extends Component {
                 </Subsection>
               </div>
             </Subsection>
-            {/* <Subsection>
-              <img
-                src="https://dummyimage.com/1920x1080/dbdbdb/fff.jpg"
-                alt="placeholder images"
-              />
-            </Subsection> */}
             <Subsection>
               <div id="presentation">
                 <Element name="presentation" className="element_presentation">
-                  <h2 className="title-blog-section">Présentation</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Présentation
+                  </h2>
                 </Element>
 
                 <p>
@@ -112,14 +108,18 @@ class School extends Component {
               </div>
               <div id="logo">
                 <Element name="logoEcole" className="element_logoEcole">
-                  <h2 className="title-blog-section">Le logo de l'école</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Le logo de l'école
+                  </h2>
                 </Element>
 
                 <img src={school_2} alt="placeholder images" />
               </div>
               <div id="maitre">
                 <Element name="maitre" className="element_maitre">
-                  <h2 className="title-blog-section">Notre Maitre</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Notre Maitre
+                  </h2>
                 </Element>
                 <img src={school_3} alt="placeholder images" />
                 <p>
@@ -163,7 +163,10 @@ class School extends Component {
               </div>
               <div id="karukera">
                 <Element name="karukera" className="element_karukera">
-                  <h2 className="title-blog-section">Karukéra</h2>
+                  <h2 className="title-blog-section">
+                    {' '}
+                    <i className="fas fa-asterisk" /> Karukéra
+                  </h2>
                 </Element>
                 <img src={school_4} alt="placeholder images" />
                 <p>

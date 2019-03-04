@@ -322,7 +322,7 @@ class MartialsArts extends Component {
                   smooth={true}
                   duration={1500}
                 >
-                  <i class="fas fa-arrow-circle-up fa-3x" />
+                  <i className="fas fa-arrow-circle-up fa-3x" />
                 </Link>
               </div>
             </Subsection>

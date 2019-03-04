@@ -96,7 +96,7 @@ class Tiles extends React.Component {
     window.addEventListener('resize', this.resizeHandler)
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     window.removeEventListener('resize', this.resizeHandler)
   }
 

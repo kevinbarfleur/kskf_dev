@@ -30,12 +30,30 @@
   color: black;
 }
 
+h2 i {
+  opacity: 0.6;
+  font-size: 0.4em;
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .title-blog-section {
   font-family: 'IM Fell English SC', serif;
   font-size: 3em;
   margin: 120px 0% 20px 0%;
   padding-bottom: 20px;
-  padding-top: 100px;
+
   font-weight: 500;
 }
 

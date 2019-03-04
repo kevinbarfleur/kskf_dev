@@ -21,6 +21,7 @@ import School from './school/School'
 // Styles
 import '../styles/reset.css'
 import '../styles/app.css'
+import '../styles/linkGradient.css'
 
 const RouteContainer = posed.div({
   enter: { opacity: 1, delay: 300, beforeChildren: true },

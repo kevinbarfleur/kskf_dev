@@ -1,8 +1,3 @@
-.sticky {
-  position: sticky;
-  top: 100px;
-}
-
 .summary-blog {
   display: flex;
   flex-flow: row nowrap;
@@ -12,11 +7,29 @@
   color: white;
   border: none;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .summary-blog li {
   padding: 20px;
+  transition: 0.4s;
+}
+
+.summary-blog li:hover {
+  transition: 0.4s;
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .summary-blog:first-child {
