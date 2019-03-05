@@ -2,6 +2,9 @@ import React, { Component, Fragment } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import posed, { PoseGroup } from 'react-pose'
 
+// Tools
+import ScrollTop from './tools/ScrollTop'
+
 // Navbar & Footer Components
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -36,42 +39,44 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar ref="navbarComponent" />
-        <Route
-          render={({ location }) => (
-            <div className="content" onClick={this.closeNavbar}>
-              <PoseGroup>
-                <RouteContainer key={location.pathname}>
-                  <Switch location={location}>
-                    <Route exact path="/" component={Home} key="home" />
-                    <Route path="/ecole" component={School} key="ecole" />
-                    <Route
-                      path="/arts-martiaux"
-                      component={Martials_Arts}
-                      key="arts-martiaux"
-                    />
-                    <Route
-                      path="/actualites"
-                      component={Actuality}
-                      key="actualites"
-                    />
-                    <Route
-                      path="/gallerie"
-                      component={Gallery}
-                      key="gallerie"
-                    />
-                    <Route
-                      path="/contacts"
-                      component={Contacts}
-                      key="contacts"
-                    />
-                  </Switch>
-                </RouteContainer>
-              </PoseGroup>
-            </div>
-          )}
-        />
-        <Footer />
+        <ScrollTop>
+          <Navbar ref="navbarComponent" />
+          <Route
+            render={({ location }) => (
+              <div className="content" onClick={this.closeNavbar}>
+                <PoseGroup>
+                  <RouteContainer key={location.pathname}>
+                    <Switch location={location}>
+                      <Route exact path="/" component={Home} key="home" />
+                      <Route path="/ecole" component={School} key="ecole" />
+                      <Route
+                        path="/arts-martiaux"
+                        component={Martials_Arts}
+                        key="arts-martiaux"
+                      />
+                      <Route
+                        path="/actualites"
+                        component={Actuality}
+                        key="actualites"
+                      />
+                      <Route
+                        path="/gallerie"
+                        component={Gallery}
+                        key="gallerie"
+                      />
+                      <Route
+                        path="/contacts"
+                        component={Contacts}
+                        key="contacts"
+                      />
+                    </Switch>
+                  </RouteContainer>
+                </PoseGroup>
+              </div>
+            )}
+          />
+          <Footer />
+        </ScrollTop>
       </Fragment>
     )
   }

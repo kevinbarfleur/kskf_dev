@@ -281,7 +281,7 @@ class School extends Component {
                   activeClass="active"
                   to="topPage"
                   smooth={true}
-                  duration={1500}
+                  duration={900}
                 >
                   <i className="fas fa-arrow-circle-up fa-3x" />
                 </Link>

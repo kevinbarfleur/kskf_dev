@@ -292,14 +292,47 @@ const MAP_OPTIONS = {
 }
 
 class Position extends Component {
-  static defaultProps = {
+  state = {
+    width: '100vw',
+    height: '100vh',
     center: {
-      // lat: 16.254066,
-      // lng: -61.60406
       lat: 16.253534,
       lng: -61.588398
     },
     zoom: 15
+  }
+
+  componentWillMount() {
+    this.handleResize()
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
+
+  handleResize = () => {
+    if (window.innerWidth <= 860) {
+      this.setState({
+        width: '100vw',
+        height: '150vh',
+        center: {
+          lat: 16.277991,
+          lng: -61.601724
+        },
+        zoom: 14
+      })
+    } else {
+      this.setState({
+        width: '100vw',
+        height: '100vh',
+        center: {
+          lat: 16.253534,
+          lng: -61.588398
+        },
+        zoom: 15
+      })
+    }
   }
 
   render() {
@@ -308,14 +341,15 @@ class Position extends Component {
       <div
         className="map"
         style={{
-          height: '100vh',
-          width: '100vw'
+          height: this.state.height,
+          width: this.state.width
         }}
       >
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyDdIrKETKggpgW9Yjfxoze37hGSqCJE1f8' }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+          defaultCenter={this.state.center}
+          center={this.state.center}
+          defaultZoom={this.state.zoom}
           options={MAP_OPTIONS}
         >
           <AnyReactComponent lat={16.254066} lng={-61.60406} text={'KSKF'} />

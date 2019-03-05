@@ -103,9 +103,14 @@ h4 {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-#timeline .timeline-item .timeline-content:hover {
+
+#timeline .timeline-content:hover {
   box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
 }
+#timeline .timeline-content:hover#timeline .timeline-item .timeline-icon {
+  background-color: red;
+}
+
 #timeline .timeline-item .timeline-content h2 {
   padding: 15px;
   background: #212121;
