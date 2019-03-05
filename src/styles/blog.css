@@ -1,6 +1,7 @@
 .container-blog {
   padding-top: 10vh;
   margin: auto;
+  padding-bottom: 100px;
   width: 50vw;
   line-height: 29px;
   font-family: 'Montserrat', sans-serif;
@@ -9,6 +10,7 @@
 .blog-date {
   width: 100%;
   text-align: center;
+  font-size: 0.8em;
 }
 
 @media screen and (max-width: 860px) {

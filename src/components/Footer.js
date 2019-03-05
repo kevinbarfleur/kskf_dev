@@ -13,9 +13,13 @@ class Footer extends Component {
               <b>少林功夫</b>
             </p>
           </div>
-          <div>Karukera Shaolin Kung Fu</div>
           <div>
-            Copyright <b>2018</b>
+            <p>Karukera Shaolin Kung Fu</p>
+          </div>
+          <div>
+            <p>
+              Copyright <b>2018</b>
+            </p>
           </div>
         </div>
       </React.Fragment>

@@ -1,7 +1,38 @@
 .tooltip {
-  background-color: aliceblue;
-  padding: 10px;
   width: fit-content;
-  border: 1px solid lightgray;
-  transition: 0.5s;
+  padding: 10px;
+  position: relative;
+  background: #d0d0d0;
+  border-radius: 0.4em;
+  border: none;
+  transition: 0.4s;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.5em;
+  box-shadow: 5px 5px 50px black;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #d0d0d0;
+  border-top: 0;
+  border-left: 0;
+  margin-left: -13px;
+  margin-top: 0px;
+  transition: 0.4s;
+}
+
+.tooltip:hover {
+  transform: scale(1.1) translateY(10px);
+  transition: 0.4s;
+}
+
+.tooltip:hover.tooltip::after {
+  margin-top: -10px;
+  transition: 0.4s;
 }

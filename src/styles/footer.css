@@ -4,13 +4,17 @@
   text-align: center;
 
   background: rgba(0, 0, 0, 0.9);
-  margin-top: 100px;
+  /* margin-top: 100px; */
   padding: 10px 0 10px 0;
 }
 
 .footer div {
-  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   margin: 15px 0 15px 0;
+}
+
+.footer div p,
+.footer div p b {
+  color: rgba(255, 255, 255, 0.8);
 }

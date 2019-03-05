@@ -48,7 +48,9 @@ class MartialsArts extends Component {
             <Subsection>
               <div id="kungfu">
                 <Element name="kungfu" className="element_presentation">
-                  <h2 className="title-blog-section">Le Kung Fu Shaolin</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Le Kung Fu Shaolin
+                  </h2>
                 </Element>
 
                 <p>
@@ -120,14 +122,18 @@ class MartialsArts extends Component {
               </div>
               <div id="taichi">
                 <Element name="taichi" className="element_taichi">
-                  <h2 className="title-blog-section">Tai Chi et Chi Kung</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Tai Chi et Chi Kung
+                  </h2>
                 </Element>
 
                 <img src={MartialArts_2} alt="placeholder images" />
               </div>
               <div id="style">
                 <Element name="style" className="element_style">
-                  <h2 className="title-blog-section">Notre Style</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Notre Style
+                  </h2>
                 </Element>
                 <img src={MartialArts_3} alt="placeholder images" />
                 <p>
@@ -227,7 +233,9 @@ class MartialsArts extends Component {
                   name="soinsEnergetiques"
                   className="element_soinsEnergetique"
                 >
-                  <h2 className="title-blog-section">Soins Énergétiques</h2>
+                  <h2 className="title-blog-section">
+                    <i className="fas fa-asterisk" /> Soins Énergétiques
+                  </h2>
                 </Element>
                 <img src={MartialArts_4} alt="placeholder images" />
                 <p>
