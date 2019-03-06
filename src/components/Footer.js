@@ -18,7 +18,7 @@ class Footer extends Component {
           </div>
           <div>
             <p>
-              Copyright <b>2018</b>
+              Copyright <b>2019</b>
             </p>
           </div>
         </div>
