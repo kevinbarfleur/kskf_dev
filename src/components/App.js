@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <Fragment>
         <ScrollTop>
-          <Navbar ref="navbarComponent" />
+          <Navbar ref="navbarComponent" location={window.location.pathname} />
           <Route
             render={({ location }) => (
               <div className="content" onClick={this.closeNavbar}>

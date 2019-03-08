@@ -35,35 +35,43 @@ class Navbar extends Component {
   }
 
   render() {
+    const location = this.props.location
+    const isHome = location === '/' ? 'currentLocation' : null
+    const isContact = location === '/contacts' ? 'currentLocation' : null
+    const isSchool = location === '/ecole' ? 'currentLocation' : null
+    const isMartials = location === '/arts-martiaux' ? 'currentLocation' : null
+    const isGallery = location === '/gallerie' ? 'currentLocation' : null
+    const isActuality = location === '/actualites' ? 'currentLocation' : null
+
     const orderedView =
       this.state.navbarStatus === 'active' ? (
         <div>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isContact}`}>
             <Link to="/contacts" style={{ textDecoration: 'none' }}>
               <i className="fas fa-mail-bulk" /> Contacts
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isGallery}`}>
             <Link to="/gallerie" style={{ textDecoration: 'none' }}>
               <i className="far fa-images" /> Gallerie
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isActuality}`}>
             <Link to="/actualites" style={{ textDecoration: 'none' }}>
               <i className="far fa-newspaper" /> Actualités
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isMartials}`}>
             <Link to="/arts-martiaux" style={{ textDecoration: 'none' }}>
               <i className="fas fa-fist-raised" /> Arts Martiaux
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isSchool}`}>
             <Link to="/ecole" style={{ textDecoration: 'none' }}>
               <i className="fas fa-graduation-cap" /> L'école
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isHome}`}>
             <Link to="/" style={{ textDecoration: 'none' }}>
               <i className="fas fa-home" /> Acceuil
             </Link>
@@ -76,7 +84,7 @@ class Navbar extends Component {
         </div>
       ) : (
         <div>
-          <li className="navbar__link link__home">
+          <li className={`navbar__link ${isHome}`}>
             <Link
               to="/"
               style={{
@@ -90,7 +98,7 @@ class Navbar extends Component {
               <i className="fas fa-home" /> Acceuil
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isSchool}`}>
             <Link
               to="/ecole"
               style={{ textDecoration: 'none' }}
@@ -100,7 +108,7 @@ class Navbar extends Component {
               <i className="fas fa-graduation-cap" /> L'école
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isMartials}`}>
             <Link
               to="/arts-martiaux"
               style={{ textDecoration: 'none' }}
@@ -109,7 +117,7 @@ class Navbar extends Component {
               <i className="fas fa-fist-raised" /> Arts Martiaux
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isActuality}`}>
             <Link
               to="/actualites"
               style={{ textDecoration: 'none' }}
@@ -119,7 +127,7 @@ class Navbar extends Component {
               <i className="far fa-newspaper" /> Actualités
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isGallery}`}>
             <Link
               to="/gallerie"
               style={{ textDecoration: 'none' }}
@@ -128,7 +136,7 @@ class Navbar extends Component {
               <i className="far fa-images" /> Gallerie
             </Link>
           </li>
-          <li className="navbar__link">
+          <li className={`navbar__link ${isContact}`}>
             <Link
               to="/contacts"
               style={{ textDecoration: 'none' }}

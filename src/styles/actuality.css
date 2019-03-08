@@ -1,3 +1,5 @@
+@import './variables.css';
+
 .actuality_container {
   width: 100vw;
   min-height: 100vh;
@@ -10,7 +12,7 @@
 }
 
 .actuality_container h1 {
-  font-family: 'Fredericka the Great', cursive;
+  font-family: var(--title-font-familly);
   font-size: 3em;
   text-align: center;
   margin-top: 15%;

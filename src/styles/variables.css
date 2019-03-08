@@ -1,0 +1,10 @@
+:root {
+  --main-font-color: #212121;
+  /* --gradient-color-1: #f9d423; */
+  --gradient-color-1: #ff874e;
+  --gradient-color-2: #ff4e50;
+
+  /* --main-font-family: 'Open Sans', sans-serif; */
+  --main-font-family: 'Quicksand', sans-serif;
+  --title-font-family: 'Fredericka the Great', cursive;
+}

@@ -1,3 +1,5 @@
+@import './variables.css';
+
 .container__about {
   display: flex;
   flex-flow: column wrap;
@@ -32,7 +34,6 @@
 
 .subsection p {
   color: #424242;
-  font-size: 0.9em;
   /* padding: 0 10% 0 10%; */
 }
 
@@ -56,7 +57,7 @@
 }
 
 .subsection h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
   padding: 20px 0% 20px 0%;
   font-weight: 500;
   font-size: 1.5em;
@@ -75,7 +76,7 @@
 .title__about {
   position: relative;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
   font-weight: 500;
   text-align: center;
   margin-top: 60px;
@@ -93,7 +94,7 @@
 }
 
 .preview_title h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 1.5em;
 }

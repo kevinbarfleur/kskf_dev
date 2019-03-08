@@ -18,67 +18,61 @@ class Contacts extends Component {
               <h3>Contact</h3>
               <p>
                 Les entraînements se déroulent au foyer culturel de Fond BUDAN à
-                Baie-Mahault selon le planning suivant :{' '}
+                <b className="colorBold"> Baie-Mahault</b> selon le planning
+                suivant :{' '}
               </p>
               <div className="horaires">
                 <div>
                   <p>
-                    <b>6 à 10 ans</b>
+                    <b className="colorBold">6 à 10 ans</b>
                   </p>
                   <p>Mercredi et Samedi : 17H30 - 18H30</p>
                 </div>
                 <div>
                   <p>
-                    <b>11 à 15 ans</b>
+                    <b className="colorBold">11 à 15 ans</b>
                   </p>
                   <p>Mercredi et Samedi : 18H30 - 20H00</p>
                 </div>
                 <div>
                   <p>
-                    <b>Plus de 15 ans</b>
+                    <b className="colorBold">Plus de 15 ans</b>
                   </p>
                   <p>Mardi et Vendredi : 18H30 - 20H00</p>
                 </div>
               </div>
-
               <p>
                 <i>
-                  Vous pouvez venir assister aux cours et aussi participer à un
-                  cours d'essais.
+                  Vous pouvez venir ASSITER aux cours et aussi participer à un
+                  COURS D'ESSAIS.
                 </i>
               </p>
               <p className="contact_mail">
-                Vous pouvez nous contacter par <b>téléphone</b> ou par{' '}
-                <b>mail</b> :
+                Vous pouvez nous contacter par{' '}
+                <b className="colorBold">téléphone</b> ou par{' '}
+                <b className="colorBold">mail</b> :
               </p>
-              <p>
-                Tel :{' '}
-                <a
-                  className="underline_magical"
-                  style={{
-                    position: 'relative',
-                    textDecoration: 'none',
-                    padding: 3
-                  }}
-                  href="tel:+590690507028"
-                >
-                  0690.50.70.28{' '}
-                </a>
-              </p>
-              <p>
-                mail :{' '}
-                <a
-                  className="underline_magical"
-                  style={{
-                    position: 'relative',
-                    textDecoration: 'none',
-                    padding: 3
-                  }}
-                  href="mailto:kskf971@yahoo.fr"
-                >
-                  kskf971@yahoo.fr
-                </a>
-              </p>
+              <a
+                style={{
+                  position: 'relative',
+                  textDecoration: 'none',
+                  padding: 3
+                }}
+                href="tel:+590690507028"
+              >
+                <button className="contactButton">0690.50.70.28</button>
+              </a>
+              <br />
+              <a
+                style={{
+                  position: 'relative',
+                  textDecoration: 'none',
+                  padding: 3
+                }}
+                href="mailto:kskf971@yahoo.fr"
+              >
+                <button className="contactButton">kskf971@yahoo.fr</button>
+              </a>
             </div>
           </div>
         </div>
