@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 // Styles
 import '../styles/navbar.css'
+import '../styles/blogLink.css'
 
 class Navbar extends Component {
   constructor(props) {
@@ -35,23 +36,37 @@ class Navbar extends Component {
   }
 
   render() {
+    const BlogLink = () => (
+      <a
+        href="https://kskfactus.netlify.com/"
+        style={{ textDecoration: 'none' }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <li className="blogLink">
+          <i className="far fa-newspaper" /> Actualités
+        </li>
+      </a>
+    )
+
     const location = this.props.location
     const isHome = location === '/' ? 'currentLocation' : null
     const isContact = location === '/contacts' ? 'currentLocation' : null
     const isSchool = location === '/ecole' ? 'currentLocation' : null
     const isMartials = location === '/arts-martiaux' ? 'currentLocation' : null
-    const isGallery = location === '/gallerie' ? 'currentLocation' : null
-    const isActuality = location === '/actualites' ? 'currentLocation' : null
+    // const isGallery = location === '/gallerie' ? 'currentLocation' : null
+    // const isActuality = location === '/actualites' ? 'currentLocation' : null
 
     const orderedView =
       this.state.navbarStatus === 'active' ? (
         <div>
+          {BlogLink()}
           <li className={`navbar__link ${isContact}`}>
             <Link to="/contacts" style={{ textDecoration: 'none' }}>
               <i className="fas fa-mail-bulk" /> Contacts
             </Link>
           </li>
-          <li className={`navbar__link ${isGallery}`}>
+          {/* <li className={`navbar__link ${isGallery}`}>
             <Link to="/gallerie" style={{ textDecoration: 'none' }}>
               <i className="far fa-images" /> Gallerie
             </Link>
@@ -60,7 +75,7 @@ class Navbar extends Component {
             <Link to="/actualites" style={{ textDecoration: 'none' }}>
               <i className="far fa-newspaper" /> Actualités
             </Link>
-          </li>
+          </li> */}
           <li className={`navbar__link ${isMartials}`}>
             <Link to="/arts-martiaux" style={{ textDecoration: 'none' }}>
               <i className="fas fa-fist-raised" /> Arts Martiaux
@@ -117,7 +132,7 @@ class Navbar extends Component {
               <i className="fas fa-fist-raised" /> Arts Martiaux
             </Link>
           </li>
-          <li className={`navbar__link ${isActuality}`}>
+          {/* <li className={`navbar__link ${isActuality}`}>
             <Link
               to="/actualites"
               style={{ textDecoration: 'none' }}
@@ -135,7 +150,7 @@ class Navbar extends Component {
             >
               <i className="far fa-images" /> Gallerie
             </Link>
-          </li>
+          </li> */}
           <li className={`navbar__link ${isContact}`}>
             <Link
               to="/contacts"
@@ -145,6 +160,7 @@ class Navbar extends Component {
               <i className="fas fa-mail-bulk" /> Contacts
             </Link>
           </li>
+          {BlogLink()}
         </div>
       )
 
