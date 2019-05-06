@@ -8,6 +8,7 @@ import ScrollTop from './tools/ScrollTop'
 // Navbar & Footer Components
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Loading from './Loading'
 
 // Pages
 import Home from './home/Home'
@@ -32,13 +33,34 @@ const RouteContainer = posed.div({
 })
 
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      isLoading: true
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ isLoading: false })
+    }, 10000)
+  }
+
   closeNavbar = () => {
     this.refs.navbarComponent.closeNavbar()
   }
 
   render() {
+    const loadingView = this.state.isLoading ? (
+      <Loading height="100vh" />
+    ) : (
+      <Loading height="100vh" />
+    )
+
     return (
       <Fragment>
+        {loadingView}
         <ScrollTop>
           <Navbar ref="navbarComponent" location={window.location.pathname} />
           <Route
