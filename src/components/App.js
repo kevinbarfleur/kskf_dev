@@ -8,7 +8,7 @@ import ScrollTop from './tools/ScrollTop'
 // Navbar & Footer Components
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 // Pages
 import Home from './home/Home'
@@ -52,15 +52,15 @@ class App extends Component {
   }
 
   render() {
-    const loadingView = this.state.isLoading ? (
-      <Loading height="100vh" />
-    ) : (
-      <Loading height="100vh" />
-    )
+    // const loadingView = this.state.isLoading ? (
+    //   <Loading height="100vh" />
+    // ) : (
+    //   <Loading height="100vh" />
+    // )
 
     return (
       <Fragment>
-        {loadingView}
+        {/* {loadingView} */}
         <ScrollTop>
           <Navbar ref="navbarComponent" location={window.location.pathname} />
           <Route
